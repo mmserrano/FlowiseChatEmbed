@@ -1286,7 +1286,6 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
       }
     }
   });
-  */
 
   createEffect(() => {
     if (props.fontSize && botContainer) botContainer.style.fontSize = `${props.fontSize}px`;
