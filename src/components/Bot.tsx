@@ -1280,9 +1280,10 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
   createEffect(() => {
     if (messages()) {
       if (messages().length > 1 && !isTTSActionRef) {
-        setTimeout(() => {
-          chatContainer?.scrollTo(0, chatContainer.scrollHeight);
-        }, 1000);
+        // Automatic scrolling is disabled
+        //setTimeout(() => {
+        //chatContainer?.scrollTo(0, chatContainer.scrollHeight);
+        //}, 1000);
       }
     }
   });
