@@ -1282,7 +1282,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
       if (messages().length > 1 && !isTTSActionRef) {
         setTimeout(() => {
           chatContainer?.scrollTo(0, chatContainer.scrollHeight);
-        }, 400);
+        }, 1000);
       }
     }
   });
